@@ -34,3 +34,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# PNPM
+pnpm-debug.log*
+.pnpm-store/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Additional OS generated files
+Thumbs.db
+.directory
+desktop.ini
