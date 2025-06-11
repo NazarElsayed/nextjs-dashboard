@@ -1,7 +1,7 @@
-import { Card } from '@/app/ui/dashboard/cards';
-import RevenueChart from '@/app/ui/dashboard/revenue-chart';
+import { Card }       from '@/app/ui/dashboard/cards';
+import RevenueChart   from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
-import { lusitana } from '@/app/ui/fonts';
+import { lusitana }   from '@/app/ui/fonts';
 import {
     fetchRevenue       ,
     fetchLatestInvoices,
@@ -10,9 +10,9 @@ import {
 
 export default async function Page() {
 
-    const revenue = await fetchRevenue();
+    const revenue        = await fetchRevenue();
     const latestInvoices = await fetchLatestInvoices();
-    const cardData = await fetchCardData();
+    const cardData       = await fetchCardData();
 
     return (
         <main>
